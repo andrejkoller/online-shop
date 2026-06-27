@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  --header-height: 4rem;
+
   --color-background: rgb(0, 0, 0);
   --color-foreground: rgb(255, 255, 255);
 
@@ -33,7 +35,8 @@
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist", sans-serif;
+  font-size: 0.875rem;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
