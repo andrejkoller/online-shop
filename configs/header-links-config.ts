@@ -5,9 +5,9 @@ export const headerLinksConfig = [
     href: "/sheet-music",
   },
   {
-    key: "live-concerts",
-    label: "Live Concerts",
-    href: "/live-concerts",
+    key: "books",
+    label: "Books",
+    href: "/books",
   },
   {
     key: "about",
