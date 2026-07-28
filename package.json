@@ -9,8 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@remixicon/react": "^4.9.0",
     "next": "16.2.6",
-    "react": "19.2.3",
+    "react": "19.2.8",
     "react-dom": "19.2.7"
   },
   "devDependencies": {
@@ -19,8 +20,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^10",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.2.11",
     "tailwindcss": "^4",
-    "typescript": "^6"
+    "typescript": "^7"
   }
 }
