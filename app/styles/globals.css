@@ -40,6 +40,10 @@
   --color-secondary: rgb(245, 245, 245);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
