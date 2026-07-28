@@ -1,5 +1,6 @@
 import { footerLinksConfig } from "@/configs/footer-links-config";
 import Link from "next/link";
+import { ThemeSwitcher } from "./theme/theme-switcher";
 
 export const Footer = () => {
   return (
@@ -39,10 +40,11 @@ export const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="max-w-300 mx-auto w-full px-6 pb-9 mt-12">
+      <div className="flex justify-between items-center max-w-300 mx-auto w-full px-6 pb-9 mt-12">
         <p className="text-sm text-(--color-muted)">
           © {new Date().getFullYear()} Andrej Koller. All rights reserved.
         </p>
+        <ThemeSwitcher />
       </div>
     </footer>
   );
