@@ -4,7 +4,7 @@ import { ThemeSwitcher } from "./theme/theme-switcher";
 
 export const Footer = () => {
   return (
-    <footer className="bg-(--color-secondary) before:block before:content-[''] before:h-px before:w-full before:bg-(--color-border)">
+    <footer className="bg-(--color-background) before:block before:content-[''] before:h-px before:w-full before:bg-(--color-border)">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 max-w-300 mx-auto w-full px-6 pt-9">
         {footerLinksConfig.map((section) => (
           <div key={section.title} className="flex flex-col gap-4">

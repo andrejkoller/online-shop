@@ -6,9 +6,21 @@ import type { Theme } from "./types";
 import { useTheme } from "./use-theme";
 
 const options: { value: Theme; icon: React.ReactNode; label: string }[] = [
-  { value: "light", icon: <RiSunLine size={16} />, label: "Light" },
-  { value: "system", icon: <RiComputerLine size={16} />, label: "System" },
-  { value: "dark", icon: <RiMoonClearLine size={16} />, label: "Dark" },
+  {
+    value: "light",
+    icon: <RiSunLine size={16} />,
+    label: "Switch to Light (Shift + D)",
+  },
+  {
+    value: "system",
+    icon: <RiComputerLine size={16} />,
+    label: "Switch to System (Shift + D)",
+  },
+  {
+    value: "dark",
+    icon: <RiMoonClearLine size={16} />,
+    label: "Switch to Dark (Shift + D)",
+  },
 ];
 
 export const ThemeSwitcher = () => {
@@ -30,7 +42,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <div
-      className="flex items-center gap-0.5 rounded-full border border-(--color-border) bg-(--color-secondary) p-1"
+      className="flex items-center gap-0.5 rounded-full border border-(--color-border) bg-(--color-background) p-1"
       role="group"
       aria-label="Theme switcher"
     >
@@ -43,7 +55,7 @@ export const ThemeSwitcher = () => {
           aria-pressed={theme === value}
           className={`flex items-center justify-center w-7 h-7 rounded-full transition-colors duration-200 cursor-pointer ${
             theme === value
-              ? "bg-white/10 text-(--color-primary)"
+              ? "bg-(--color-muted-bg) text-(--color-primary)"
               : "text-(--color-muted) hover:text-(--color-primary)"
           }`}
         >
