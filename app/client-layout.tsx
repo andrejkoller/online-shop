@@ -1,6 +1,6 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { ThemeProvider } from "@/components/theme/theme-provider";
+import { ThemeProvider } from "@/components/theme";
 
 export default function ClientLayout({
   children,
